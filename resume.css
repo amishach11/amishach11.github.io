@@ -1,0 +1,616 @@
+                                                          /* Body Header */
+#bodyheader{ 
+	height:65vh;
+	opacity:0.6;
+	background-image : url("resume.jpg");
+	background-size:cover;
+	background-position:center;
+	margin-top:0px;
+	background-attachment:fixed;
+}
+            
+                                                         /* Horizontal List */
+  
+nav ul{
+	list-style:none;
+	/*position:absolute;*/
+	 margin: 0px 8px 8px 0px;
+	top:50px;
+	text-align:center;
+	/*margin-left:26%*/
+}
+
+nav ul li{
+	display:inline-block;
+	 margin-top:25px;
+	text-decoration:bolder;
+	font-size:20px;
+	margin-right:26px;
+}
+
+nav ul li a{
+	color:white;
+	text-decoration:none;
+	transition:color 0.5s, border-bottom 4s;
+}
+
+nav ul li a:hover{
+	color:lightgrey;
+	text-decoration:underline;
+}
+
+
+/* Hide Hamburger */
+#hamnav label, #hamburger { display: none; }
+  
+                                                            /* Icon list */
+
+div ul{
+	text-align:center;
+	margin-top:0vh;
+}
+
+div ul li{
+	display:inline-block;
+	margin-right:20px;
+	border-radius:50%
+}
+
+div ul li:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+div ul li a i{
+	color:white;
+	text-decoration:none;
+	transition:color 0.5s, border-bottom 4s;
+	padding:10px;
+	font-size:1rem;
+}
+
+div ul li a:hover{
+ box-shadow: 0px 0px 10px 08px rgba(230,196,196,0.2);
+}
+
+section{
+	width:100%;
+	  /* height:74vh; */
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+
+section:nth-child(2n){
+	background-color:#9e9b9e29;
+}
+
+section:nth-child(2n+1){
+	background-color:white;
+}
+/* section:target{ */
+	/* background-color:red;  */
+	
+/* } */
+
+.section-heading{
+	width:auto;
+	padding:20px 10px 10px;
+	margin:8px auto;
+	font-weight:400;
+}
+.section-heading span{
+	color:#2857a4;
+	width:auto;
+	padding-top:10px;
+	margin-right:0.6rem;
+	font-size:40px;
+}
+
+.skillname{
+	color:white;
+	font-size:1rem;
+	margin-left:20px;
+	margin-top:2px;	
+}
+#bootstrap{
+margin-left:15px;
+margin-top:2px;		
+font-size:0.9rem;	
+}
+
+.skillname span{
+	margin:0;
+}
+                                                        /* Name in Header */
+						   
+						   
+#name{
+	font-size:90px;
+	text-align:center;
+	margin-top: 20vh;
+	font-weight: 700;
+    margin-bottom: 0.5rem;
+	color:white;	
+}                    
+
+                                                       /* About */
+							
+							
+#about {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -14vh;
+}
+
+#my-image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+	border-style:groove;
+	border-width:3px;
+	box-shadow: 0px 0px 7px 6px lightgrey;
+}
+	
+#aboutpara{
+	margin-left: auto;
+    margin-right: auto;
+    width: 70%	
+}
+                                                      /* Skills Section */
+.skillsdisplay{
+    width: 40%;
+    margin-top: 4rem; 
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skillsprogress{
+    width: 7rem;
+    height: 1.4rem;
+    margin: 20px;
+    background-color: lightgrey;
+    border-radius: 0.8rem;
+    overflow: hidden; 
+    box-shadow: inset 1px 1px 2px 1px #b9b9b9;
+	
+}
+
+.skillsprogress>div{
+	border-radius: 20px 0 0 20px;
+	box-shadow: 1px 1px 5px 2px #98989882
+}
+
+.mb-blue{
+	background-color:#2857a4;
+}
+
+.mb-purple{
+	background-color:#800080;
+	
+}
+
+                                               /* Common margin properties */
+.mb75px{
+	margin-bottom:75px;	
+}
+
+
+                                               /* Percentage class */
+.eightfivepercent{
+	width:85%;
+	height:inherit;
+}
+
+.nintyfivepercent{
+	width:92%;
+	height:inherit;
+}
+
+.seventyfivepercent{
+	width:75%;
+	height:inherit;
+}
+
+
+                                                 /* Portfolio section */
+							
+#portfolio-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 50px;
+    margin-bottom: 2%;
+    justify-content: space-around;
+}
+
+.portfolio-image-container {
+    max-width: 300px;
+    max-height:220px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-details {
+    /* display: none; */
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+    /* background-color: white; */
+}
+.portfolio-image-container:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+.portfolio-image-container:hover .portfolio-details {
+    background-color: #80808078;
+    /* display: block; */
+    color: white;
+}
+                                                                /* Contact */
+ 
+ 
+ 
+ #contact {
+
+
+
+    background-color: #0abcf9;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    /*background-color: #13386fe0;*/
+    color: white;
+    padding-bottom: 40px;
+}
+
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+
+#contact-form {
+    margin-left: 20%;
+}
+
+#contact-container {
+    display: flex;
+}
+
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#contact-form-container {
+    width: 50%;
+}
+
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+    font-size: 0.95rem;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    /*#2857a4*/
+    color: var(--contact-light-text-color);
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+#contact-form button[type="submit"] {
+    background: transparent;
+    /*#1a1a1a;*/
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+#contact .social-icons li a i {
+
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+                                                           /* Work Experience */
+
+.timeline {
+    position: relative;
+    width: 75%;
+     /* border: 2px solid black;    */
+
+}
+.timeline-box {
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 300px;
+     /* border: 2px solid black;   */
+}
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+.timeline-box:nth-child(2n+1)::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: -12.5%;
+     border-radius: 50%; 
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: grey;
+    z-index: 1;
+}
+.timeline-box:nth-child(2n)::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -9.5%;
+    border-radius: 50%; 
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: grey;
+    z-index: 1;
+}
+.timeline-divider{
+    position: absolute;
+    height: 75%;
+    width: 0;
+    border: 3px dashed #0096fa6b;
+    top: 10%;
+    left: 50%;
+}
+@media only screen and (max-width: 1000px) {
+  .timeline-divider{
+	 left: 5%; 
+  }
+  .timeline-box:nth-child(2n) {
+    left: 12%;
+	
+  }
+  .timeline-box:nth-child(2n)::after {
+	  left:-9.5%;
+  }
+  .timeline-box:nth-child(2n+1)::after {
+	  left:-10.5%;
+  }
+  .timeline-box{
+	  left:12%;
+	  width:90%;
+	  min-height:250px;
+  } 
+  .timeline{
+	  width:95%;
+  }
+  #name{
+	  
+	  font-size:60px;
+  }
+}
+
+.timeline-traveller {
+    position: sticky;
+    top: 30%;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+.designationName h2{
+	top:-2%;
+	 position: absolute;
+	  left:60%;
+	  color:blue;
+}
+.companyName h3{
+	 position: absolute;
+	 top:20%;
+	  left:60%;
+	  color:#FF7F24 ;
+}
+.duration p{
+	position: absolute;
+	 top:32%;
+	 left:60%;
+	 color:grey ;
+}
+.icon{
+	top:3%;
+	position: absolute;
+	left:3%;
+}
+.icon img{
+	height:70px;
+	width:70px;
+}
+.role{
+	color:grey;
+	position:absolute;
+	top:47%;
+	left:3%;
+}
+
+                                                                /* Education */
+																
+																
+.degreeName h2{
+	top:-2%;
+	 position: absolute;
+	  left:55%;
+	  color:blue;
+}
+.instituteName h3{
+	 position: absolute;
+	 top:35%;
+	  left:45%;
+	  color:#FF7F24 ;
+}
+.schoolName{
+	position: absolute;
+	 top:40%;
+	  left:55%;
+	  color:#FF7F24 
+}
+.time p{
+	position: absolute;
+	 top:55%;
+	 left:60%;
+	 color:grey ;
+}
+#time{
+	position: absolute;
+	 top:57%;
+	 left:50%;
+	 color:grey; 
+}
+.study{
+	color:grey;
+	position:absolute;
+	top:70%;
+	left:3%
+}
+.schoolicon{
+	top:3%;
+	position: absolute;
+	left:3%;
+}
+.schoolicon img{
+	
+	height:60px;
+	width:55px;
+}
+@media only screen and (max-width: 1200px){
+	#time{
+		top:62%;
+		
+	}
+	
+}
+@media only screen and (max-width: 600px){
+	.timeline-divider{
+	 left: 5%; 
+  }
+	.timeline-box:nth-child(2n) {
+    left: 12%;
+	
+  }
+   .timeline-box:nth-child(2n)::after {
+	  left:-9.5%;
+  }
+  .timeline-box:nth-child(2n+1)::after {
+	  left:-10.5%;
+  }
+  .timeline-box{
+	  left:12%;
+	  width:90%;
+	  min-height:350px;
+  } 
+  .timeline{
+	  width:95%;
+  }
+  .degreeName h2{
+	  left:37%;    
+  }
+  .instituteName h3{
+	  left:35%;
+  }
+  .schoolName{
+	  left:40%;
+  }
+  .time p{
+	 left:52%; 
+  }
+  #time{
+	  top:62%;  
+  }
+  #name{
+	  font-size:50px;
+  }
+}
+
+@media only screen and (max-width: 1300px){
+	#time{
+		top:62%;
+		
+	}
+	.instituteName h3{
+	  top:26%;
+	 
+  }
+	
+}
